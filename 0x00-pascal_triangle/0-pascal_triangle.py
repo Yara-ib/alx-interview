@@ -2,7 +2,7 @@
 """ Pascal's Triangle Module """
 
 
-def pascal_triangle(n: int) -> list[list]:
+def pascal_triangle(n):
     """
     Function to get list of Pascal's triangle rows & their values within
 
