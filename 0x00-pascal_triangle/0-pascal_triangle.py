@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """ Pascal's Triangle Module """
-from typing import List
 
 
-def pascal_triangle(n: int) -> List[List]:
+def pascal_triangle(n: int) -> list[list]:
     """
     Function to get list of Pascal's triangle rows & their values within
 
