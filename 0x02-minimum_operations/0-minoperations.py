@@ -2,7 +2,7 @@
 """ Minimum Operations Module """
 
 
-def minOperations(n):
+def minOperations(n: int) -> int:
     """
     Function that calculates the fewest number of operations
     needed to result in exactly n * H characters in the file
@@ -20,9 +20,12 @@ def minOperations(n):
         return 0
 
     count_operations = 0
+    factor = 2
 
-    for factor in range(2, n):
+    while n > 1:
         while n % factor == 0:
             count_operations += factor
             n //= factor
+        factor += 1
+
     return count_operations
