@@ -21,8 +21,8 @@ def minOperations(n: int) -> int:
 
     count_operations = 0
 
-    for factor in range(n//2, 0, -1):
+    for factor in range(2, n):
         while n % factor == 0:
-            count_operations += n // factor
-            n = factor
+            count_operations += factor
+            n //= factor
     return count_operations
