@@ -2,7 +2,7 @@
 """ Change comes from within Module """
 
 
-def makeChange(coins, total) :
+def makeChange(coins, total):
     """
     Get the fewest number of coins needed to meet a given amount total
 
