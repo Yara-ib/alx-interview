@@ -41,7 +41,7 @@ def isWinner(x, nums):
     Returns:
         str: name of the player that won the most rounds
     """
-    if not nums or x <= 0:
+    if not nums or not x or x <= 0 or nums == []:
         return None
 
     primes = is_Prime(max(nums))
