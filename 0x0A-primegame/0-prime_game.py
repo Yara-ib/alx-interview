@@ -2,7 +2,7 @@
 """ Prime Game Module """
 
 
-def is_Prime(n: int) -> list[int]:
+def is_Prime(n):
     """
     Using Sieve of Eratosthenes method to get prime numbers
 
@@ -29,7 +29,7 @@ def is_Prime(n: int) -> list[int]:
     return primes
 
 
-def isWinner(x: int, nums: list[int]) -> str:
+def isWinner(x, nums):
     """
     Checks who's the winner in the Prime Game
 
