@@ -41,9 +41,6 @@ def isWinner(x, nums):
     Returns:
         str: name of the player that won the most rounds
     """
-    if not nums or x <= 0:
-        return None
-
     primes = is_Prime(max(nums))
     maria_score = ben_score = 0
 
@@ -75,5 +72,5 @@ def isWinner(x, nums):
         return "Maria"
     elif maria_score < ben_score:
         return "Ben"
-    else:
-        return None
+
+    return None
